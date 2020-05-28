@@ -9,11 +9,7 @@ declare var particlesJS: any;
 @Component({
     selector: 'app-components',
     templateUrl: './components.component.html',
-    styles: [`
-    ngb-progressbar {
-        margin-top: 5rem;
-    }
-    `]
+    styleUrls: ['./components.component.scss'],
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
