@@ -2,6 +2,9 @@ import { Component, OnInit, Renderer2, OnDestroy } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
+import { ParticlesConfig } from 'particles.js/particles.js';
+
+declare var particlesJS: any;
 
 @Component({
     selector: 'app-components',
@@ -52,6 +55,10 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         navbar.classList.add('navbar-transparent');
         var body = document.getElementsByTagName('body')[0];
         body.classList.add('index-page');
+
+        particlesJS('particles-js', ParticlesConfig, function() {
+            console.log('callback - particles.js config loaded');
+            });
     }
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];

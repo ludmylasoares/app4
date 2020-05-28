@@ -14,7 +14,7 @@ export class ParticulasComponent implements OnInit {
 
   ngOnInit(): void {
       // https://vincentgarreau.com/particles.js/
-      particlesJS('particles-js', './assets/particlesjs.json', function() {
+      particlesJS('particles-js', ParticlesConfig, function() {
       console.log('callback - particles.js config loaded');
       });
     } 

@@ -1,20 +1,22 @@
-<!--0. Início Fade In-->
-<div class="fadeIn">
-
-        <!---------- 1. Início da Página de Cabeçalho com Filtro Claro Cinza ----------> 
-        <div class="page-header clear-filter" filter-color="orange">
+<!-- ***0. Início Embrulho*** -->
+<div id="particles-js"  style="margin-bottom: 0px;"></div>
+    <!---------- 1. Início da Página de Cabeçalho com Filtro Claro Cinza ----------> 
+    <div class="page-header clear-filter" filter-color="orange">
     
-            <!--1. Início Página/Imagem de Cabeçalho com Rellax Cabeçalho-->  
-            <div class="page-header-image rellax-header" data-rellax-speed="0" style="background-image: url('assets/img/bg.jpg');">
-            </div>
+        <!--1. Início Página/Imagem de Cabeçalho com Rellax Cabeçalho-->  
+        <div class="page-header-image rellax-header" data-rellax-speed="0" style="background-image: url('assets/img/bg.jpg');">
+        </div>
             <!--1.a Fim Página/Imagem de Cabeçalho com Rellax Cabeçalho-->
                 
                 <!--1. Início Container-->
                 <div class="container">
+                        
                     <!--Início do Centro de Conteúdo-->
                     <div class="content-center brand">
                         <!-- <img class="n-logo" src="assets/img/now-logo.png" alt="">Insere imagem logo-->
                         <h1 class="h1-seo">Ludmyla Soares</h1>
+                        <button class="btn btn-primary btn-lg" [routerLink]="['/examples/profile']">Entrar</button>
+                        
                     </div>
                     <!--Fim do Centro de Conteúdo-->
                 </div>
@@ -30,5 +32,4 @@
         <!---------- 3. Inicío Rodapé ---------->
         <!---------- 3. Fim Rodapé ------------>
 
-</div>
-<!--0. Fim Fade In-->
+  
