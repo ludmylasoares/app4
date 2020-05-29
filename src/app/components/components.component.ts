@@ -3,6 +3,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { ParticlesConfig } from 'particles.js/particles.js';
+import Typed from 'typed.js';
 
 declare var particlesJS: any;
 
@@ -55,7 +56,14 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         particlesJS('particles-js', ParticlesConfig, function() {
             console.log('callback - particles.js config loaded');
             });
-    }
+            var typed6 = new Typed('#typed6', {
+                strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
+                typeSpeed: 40,
+                backSpeed: 0,
+                loop: true
+              });
+            }
+    
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');
