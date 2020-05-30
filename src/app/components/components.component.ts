@@ -57,7 +57,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             console.log('callback - particles.js config loaded');
             });
             var typed6 = new Typed('#typed6', {
-                strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
+                strings: ['Olá, obrigada pela visita!^1000\n `Parabéns` ^1000\n `Teste`'],
                 typeSpeed: 40,
                 backSpeed: 0,
                 loop: true
