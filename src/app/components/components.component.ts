@@ -56,13 +56,24 @@ export class ComponentsComponent implements OnInit, OnDestroy {
         particlesJS('particles-js', ParticlesConfig, function() {
             console.log('callback - particles.js config loaded');
             });
-            var typed6 = new Typed('#typed6', {
-                strings: ['Olá, obrigada pela visita!^1000\n `Parabéns` ^1000\n `Teste`'],
-                typeSpeed: 40,
-                backSpeed: 0,
-                loop: true
-              });
-            }
+
+        var typed3 = new Typed('#typed3', {
+            strings: ['<strong>Analista</strong> administrativo', 
+                      '<strong>Analista</strong> de sistemas e', 
+                      '<strong>Analista</strong> de dados'],
+            typeSpeed: 60,
+            backSpeed: 0,
+            smartBackspace: true, // this is a default
+            loop: true
+            });
+
+        var typed6 = new Typed('#typed6', {
+            strings: ['<i>"Procuro experiências inovadoras em minha carreira e a participação em projetos que façam a diferença na vida das pessoas. Acredito que só assim um profissional pode continuar em constante evolução!"</i>'],
+            typeSpeed: 30,  
+            backSpeed: 0,
+            loop: false
+            });
+           }
     
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];
