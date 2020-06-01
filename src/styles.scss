@@ -5,11 +5,7 @@
 
 /* <Exemplo efeito gradiente> */
 
-.bg-primary {
-    background:  #87293e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #87293e, #1c2331);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,  #87293e, #1c2331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
+
 
     @-webkit-keyframes fadeIn {
         0% { opacity: 0; }

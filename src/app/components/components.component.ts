@@ -58,18 +58,19 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             });
 
         var typed3 = new Typed('#typed3', {
-            strings: ['<strong>Analista</strong> administrativo', 
+            strings: ['<strong>Analista</strong> administrativo,', 
                       '<strong>Analista</strong> de sistemas e', 
-                      '<strong>Analista</strong> de dados'],
-            typeSpeed: 60,
+                      '<strong>Analista</strong> de dados!'],
+            typeSpeed: 30,
             backSpeed: 0,
             smartBackspace: true, // this is a default
             loop: true
             });
 
         var typed6 = new Typed('#typed6', {
-            strings: ['<i>"Procuro experiências inovadoras em minha carreira e a participação em projetos que façam a diferença na vida das pessoas. Acredito que só assim um profissional pode continuar em constante evolução!"</i>'],
-            typeSpeed: 30,  
+            strings: ['<i>"Procuro experiências inovadoras em minha carreira e a participação em projetos que façam a diferença na vida das pessoas. Acredito que só assim podemos continuar em constante evolução!"</i>'],
+            typeSpeed: 20,
+            cursorChar: '_',  
             backSpeed: 0,
             loop: false
             });
