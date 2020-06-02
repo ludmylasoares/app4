@@ -10,19 +10,19 @@
           </a>
            <div ngbDropdownMenu>
              <a class="dropdown-header">Em andamento</a>
-             <a class="dropdown-item" href="https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071542#overview"
+             <a class="dropdown-item" href="https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071542#overview" target="_blank"
              >Formação Angular 9</a>
-             <a class="dropdown-item" href="https://www.udemy.com/course/curso-power-bi/learn/lecture/7817536#overview"
+             <a class="dropdown-item" href="https://www.udemy.com/course/curso-power-bi/learn/lecture/7817536#overview" target="_blank"
              >Power BI</a>
-             <a class="dropdown-item" href="https://www.udemy.com/course/curso-laravel-5/learn/lecture/13899738#overview"
+             <a class="dropdown-item" href="https://www.udemy.com/course/curso-laravel-5/learn/lecture/13899738#overview" target="_blank"
              >API REST com Laravel 5.7</a>
             
              <a class="dropdown-header">Serviços</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#">Registro de Domínio</a>
-             <a class="dropdown-item" href="#">Hospedagem de Sites</a>
+             <a class="dropdown-item" href="#" target="_blank">Registro de Domínio</a>
+             <a class="dropdown-item" href="#" target="_blank">Hospedagem de Sites</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="https://demos.creative-tim.com/now-ui-kit/index.html">Documentação Now UI Kit</a>
+             <a class="dropdown-item" href="https://demos.creative-tim.com/now-ui-kit/index.html" target="_blank">Documentação Now UI Kit</a>
            </div>
          </div>
       </div>
@@ -38,24 +38,25 @@
         </div>
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/examples/profile']">
+                  <i class="now-ui-icons users_single-02"></i>
+                  <p>Perfil</p>
+                </a>
+            </li>
               <li class="nav-item">
                   <a class="nav-link" [routerLink]="['/examples/landing']">
                       <i class="now-ui-icons business_bulb-63"></i>
-                      <p>Landing</p>
+                      <p>Portifólio</p>
                   </a>
               </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/examples/profile']">
-                      <i class="now-ui-icons clothes_tie-bow"></i>
-                      <p>Perfil</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.ludmylasoares.site/pdf/curriculo_ludmyla_oliveira_soares.pdf" target="_blank">
-                        <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                        <p>Imprimir</p>
-                    </a>
-                </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="https://www.ludmylasoares.site/pdf/curriculo_ludmyla_oliveira_soares.pdf" target="_blank">
+                      <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+                      <p>Imprimir</p>
+                  </a>
+              </li>
                 <li class="nav-item">
                   <a class="nav-link" rel="tooltip" title="Estou no GitHub" data-placement="bottom" href="https://github.com/ludmylasoares" target="_blank">
                     <i class="fab fa-github"></i>

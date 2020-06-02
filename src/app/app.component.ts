@@ -5,6 +5,7 @@ import 'rxjs/add/operator/filter';
 import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import {Howl, Howler} from 'howler';
 
 @Component({
     selector: 'app-root',
@@ -39,5 +40,18 @@ export class AppComponent implements OnInit {
                 }
             });
         });
+            // Setup the new Howl.
+            const sound = new Howl({
+                src: ['assets/audios/Jimmy Cliff - I Can See Clearly Now With.mp3']
+            });
+            
+            // Play the sound.
+            sound.play();
+            
+            // Change global volume.
+            Howler.volume(0.5);
+
+       }
+
     }
-}
+

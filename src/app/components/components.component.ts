@@ -74,8 +74,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             backSpeed: 0,
             loop: false
             });
-           }
-    
+    }
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];
         navbar.classList.remove('navbar-transparent');

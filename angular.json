@@ -74,6 +74,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
+              "src/assets/js/player.js",
+              "src/assets/js/siriwave.js",
               "src/assets/js/forkit.js",
               "node_modules/rellax/rellax.min.js"
             ],
