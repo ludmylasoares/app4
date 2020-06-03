@@ -26,7 +26,10 @@
               "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/rellax/rellax.min.js"
+              "node_modules/rellax/rellax.min.js",
+              "src/assets/js/howler.core.js",
+              "src/assets/js/siriwave.js",
+              "src/assets/js/player.js"
             ]
           },
           "configurations": {
@@ -75,16 +78,12 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
               "src/assets/js/player.js",
-              "src/assets/js/siriwave.js",
-              "src/assets/js/forkit.js",
               "node_modules/rellax/rellax.min.js"
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
-              "src/assets/css/demo.css",
-              "src/assets/css/demforkit.css",
-              "src/assets/css/forkit.css"
+              "src/assets/css/demo.css"
             ],
             "assets": [
               "src/assets",

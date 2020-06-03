@@ -10,12 +10,16 @@ import { ExamplesModule } from './examples/examples.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MusicComponent } from './shared/music/music.component';
+import { FabComponent } from './shared/fab/fab.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        MusicComponent,
+        FabComponent
     ],
     imports: [
         BrowserAnimationsModule,
