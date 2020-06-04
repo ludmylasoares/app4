@@ -10,6 +10,7 @@ export class FabComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
 }
