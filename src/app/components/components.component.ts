@@ -4,6 +4,7 @@ import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { ParticlesConfig } from 'particles.js/particles.js';
 import Typed from 'typed.js';
+import { faDoorOpen } from '@fortawesome/free-solid-svg-icons';
 
 declare var particlesJS: any;
 
@@ -14,6 +15,9 @@ declare var particlesJS: any;
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
+    
+    DoorOpenIcon = faDoorOpen;
+
     data : Date = new Date();
 
     page = 4;
