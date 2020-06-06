@@ -18,7 +18,12 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon.ico",
+              {
+                "glob": "**/*",
+                "input": "node_modules/svg-country-flags/svg",
+                "output": "assets/svg-country-flags/svg"
+              }
             ],
             "styles": [
               "src/styles.scss",
@@ -26,10 +31,7 @@
               "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/rellax/rellax.min.js",
-              "src/assets/js/howler.core.js",
-              "src/assets/js/siriwave.js",
-              "src/assets/js/player.js"
+              "node_modules/rellax/rellax.min.js"
             ]
           },
           "configurations": {

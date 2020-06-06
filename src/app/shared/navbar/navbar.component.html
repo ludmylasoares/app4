@@ -9,24 +9,24 @@
               <span class="button-bar"></span>
           </a>
            <div ngbDropdownMenu>
-             <a class="dropdown-header">Em andamento</a>
+             <a class="dropdown-header"> Cursos em andamento</a>
              <a class="dropdown-item" href="https://www.udemy.com/course/formacao-angular-inicio-criando-7-projetos/learn/lecture/7071542#overview" target="_blank"
-             >Formação Angular 9</a>
+             ><i class="fab fa-angular"></i> Formação Angular 9</a>
              <a class="dropdown-item" href="https://www.udemy.com/course/curso-power-bi/learn/lecture/7817536#overview" target="_blank"
-             >Power BI</a>
+             ><i class="far fa-chart-bar"></i> Power BI</a>
              <a class="dropdown-item" href="https://www.udemy.com/course/curso-laravel-5/learn/lecture/13899738#overview" target="_blank"
-             >API REST com Laravel 5.7</a>
+             ><i class="fab fa-laravel"></i> API REST com Laravel</a>
             
-             <a class="dropdown-header">Serviços</a>
+             <a class="dropdown-header"> Serviços Disponíveis</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="#" target="_blank">Registro de Domínio</a>
-             <a class="dropdown-item" href="#" target="_blank">Hospedagem de Sites</a>
+             <a class="dropdown-item" href="#" target="_blank"><i class="fab fa-globe"></i> Registro de Domínio</a>
+             <a class="dropdown-item" href="#" target="_blank"><i class="fab fa-cpanel"></i> Hospedagem de Sites</a>
              <div class="dropdown-divider"></div>
-             <a class="dropdown-item" href="https://demos.creative-tim.com/now-ui-kit/index.html" target="_blank">Documentação Now UI Kit</a>
+             <a class="dropdown-item" href="https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html" target="_blank"><i class="far fa-file"></i> Documentação Template</a>
            </div>
          </div>
       </div>
-        <div class="navbar-translate">
+      <div class="navbar-translate">
             <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Obrigada Invision e Creative Tim">
                 Ludmyla Soares
             </a>
@@ -36,9 +36,9 @@
                 <span class="navbar-toggler-bar bar3"></span>
             </button>
         </div>
+				
         <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="orange">
             <ul class="navbar-nav ml-auto">
-              
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/examples/profile']">
                   <i class="now-ui-icons users_single-02"></i>
@@ -56,13 +56,30 @@
                       <i class="now-ui-icons arrows-1_cloud-download-93"></i>
                       <p>Imprimir</p>
                   </a>
-              </li>
-                <li class="nav-item">
+              </li>     
+              <li class="nav-item">
+                <div ngbDropdown class="dropdown">
+                  <a class="nav-link dropdown-toggle" ngbDropdownToggle rel="tooltip" title="Música" data-placement="bottom">
+                      <i class="now-ui-icons media-2_note-03"></i>
+                      <p class="d-lg-none d-xl-none">Música</p>
+                  </a>
+                    <div ngbDropdownMenu class="dropdown-menu">
+                        <div class="dropdown-header" style="color: #87293e;"><strong>Jimmy Cliff - I Can See Clearly Now With</strong></div>
+                        <a class="dropdown-item">
+                          <audio class="audio" controls autoplay >
+                            <source src="assets/audios/Jimmy Cliff - I Can See Clearly Now With.mp3" type="audio/mpeg">
+                            Seu navegador não suporta o elemento de áudio.
+                        </audio>
+                        </a>
+                    </div>
+                </div>
+            </li>          
+              <li class="nav-item">
                   <a class="nav-link" rel="tooltip" title="Estou no GitHub" data-placement="bottom" href="https://github.com/ludmylasoares" target="_blank">
                     <i class="fab fa-github"></i>
                     <p class="d-lg-none d-xl-none">GitHub</p>
                   </a>
-                </li>
+              </li>
                 <li class="nav-item">
                   <a class="nav-link" rel="tooltip" title="Estou no Linkedin" data-placement="bottom" href="https://www.linkedin.com/in/ludmylasoares/" target="_blank">
                     <i class="fab fa-linkedin"></i>
@@ -75,7 +92,6 @@
                     <p class="d-lg-none d-xl-none">Facebook</p>
                   </a>
                 </li>
-                <app-music></app-music>
             </ul>
         </div>
     </div>

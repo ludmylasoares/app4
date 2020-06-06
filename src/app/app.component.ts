@@ -6,6 +6,7 @@ import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit {
     @ViewChild(NavbarComponent) navbar: NavbarComponent;
 
     constructor( private renderer : Renderer2, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    
     ngOnInit() {
         
         var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
@@ -39,7 +41,9 @@ export class AppComponent implements OnInit {
                     navbar.classList.add('navbar-transparent');
                 }
             });
+            
         });
+        
     }
     
 }

@@ -7,11 +7,14 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MusicComponent } from './shared/music/music.component';
 import { FabComponent } from './shared/fab/fab.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatFabMenuModule } from '@angular-material-extensions/fab-menu';
 
 @NgModule({
     declarations: [
@@ -28,7 +31,9 @@ import { FabComponent } from './shared/fab/fab.component';
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
-        ExamplesModule
+        ExamplesModule,
+        FontAwesomeModule,
+        MatFabMenuModule
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -1,36 +1,11 @@
-  <!-- Top Info -->
-  <div id="title2">
-    <span id="track"></span>
-    <div id="timer">0:00</div>
-    <div id="duration">0:00</div>
-  </div>
+<div class="player-ctrl">
+  <!-- Play Button -->
+  <a id="podcast-play" onclick="playShow()"><i class="fas fa-play"></i></a>
+  <!-- Pause Button -->
+  <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="fas fa-pause"></i></a>
+</div>
 
-  <!-- Controls -->
-  <div class="controlsOuter">
-    <div class="controlsInner">
-      <div id="loading"></div>
-      <div class="btn" id="playBtn"></div>
-      <div class="btn" id="pauseBtn"></div>
-      <div class="btn" id="prevBtn"></div>
-      <div class="btn" id="nextBtn"></div>
-    </div>
-    <div class="btn" id="playlistBtn"></div>
-    <div class="btn" id="volumeBtn"></div>
-  </div>
-
-  <!-- Progress -->
-  <div id="waveform"></div>
-  <div id="bar"></div>
-  <div id="progress"></div>
-
-  <!-- Playlist -->
-  <div id="playlist">
-    <div id="list"></div>
-  </div>
-
-  <!-- Volume -->
-  <div id="volume" class="fadeout">
-    <div id="barFull" class="bar"></div>
-    <div id="barEmpty" class="bar"></div>
-    <div id="sliderBtn"></div>
-  </div>
+<!-- Audio player -->
+<audio id="podcast-audio">
+  <source src="assets/audios/Jimmy Cliff - I Can See Clearly Now With.mp3" type="audio/mpeg">
+</audio>
