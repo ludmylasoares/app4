@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faCog, faCode, faTablet, faSitemap } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faCode, faTablet, faSitemap, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faAngular,faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
+
 
 @Component({
   selector: 'app-fab',
@@ -16,11 +17,13 @@ export class FabComponent implements OnInit {
   Html5Icon = faHtml5;
   TabletIcon = faTablet;
   SitemapIcon = faSitemap;
+  TimesIcon = faTimes
  
   constructor() { }
 
   ngOnInit(): void {
     
+
   }
 
 }

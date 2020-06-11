@@ -10,11 +10,11 @@
         <div class="page-header-image rellax-header" data-rellax-speed="-7" style="background-image: url('assets/img/bg.jpg');">
         </div>
            <!-- 1.a Fim Página/Imagem de Cabeçalho com Rellax Cabeçalho-->
-                
+               
                 <!--1. Início Container-->
                 <div class="container">
                     <!--Início do Centro de Conteúdo-->
-                    <div class="content-center brand" style="margin-top: 60px;">
+                    <div class="content-center brand">
                         <!-- <img class="n-logo" src="assets/img/now-logo.png" alt="">Insere imagem logo-->
                         <h1 class="h1-seo">Ludmyla Soares</h1>
                         <div id="typed-string">
@@ -23,16 +23,14 @@
                         <div id="typed-string">
                             <h4><span id="typed6" style="font-family: 'Elsie', cursive;"></span></h4>
                         </div>
-                        <br/>
-                        <button style="background: linear-gradient(to bottom,  #87293e, #1c2331);" href="#button" class="btn btn-primary btn-round btn-lg btn-icon" rel="tooltip" title="Veja mais...">
-                            <fa-icon [icon]="DoorOpenIcon"></fa-icon>
-                        </button>
-                        <br/></div>
-                    <!--Fim do Centro de Conteúdo-->
-                </div>
+                        <a [routerLink]="['/examples/profile']" class="lock">
+                            <fa-icon class="fa-3x icon-unlock" [icon]="DoorClosedIcon"></fa-icon>
+                            <fa-icon class="fa-3x icon-lock" [icon]="DoorOpenIcon"></fa-icon>
+                        </a>
+                         <!--Fim do Centro de Conteúdo-->
+                    </div>
                 <!--1. Fim Container-->
-                
-        </div>
+                </div>
         <!---------- 1. Fim da Página de Cabeçalho com Filtro Claro Cinza ---------->
 
         <!---------- 2. Início Principal -------->  

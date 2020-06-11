@@ -1,10 +1,10 @@
-import { Component, OnInit, Renderer2, OnDestroy } from '@angular/core';
+import { Component, OnInit, Renderer2, OnDestroy} from '@angular/core';
+import { faDoorOpen, faDoorClosed, faDungeon } from '@fortawesome/free-solid-svg-icons';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
 import { ParticlesConfig } from 'particles.js/particles.js';
 import Typed from 'typed.js';
-import { faDoorOpen } from '@fortawesome/free-solid-svg-icons';
 
 declare var particlesJS: any;
 
@@ -15,17 +15,19 @@ declare var particlesJS: any;
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
-    
-    DoorOpenIcon = faDoorOpen;
 
+    DoorOpenIcon = faDoorOpen;
+    DoorClosedIcon = faDoorClosed;
+    DungeonIcon = faDungeon;
+    
     data : Date = new Date();
 
     page = 4;
     page1 = 5;
     page2 = 3;
-    focus;
-    focus1;
-    focus2;
+    focus: any;
+    focus1: any;
+    focus2: any;
 
     date: {year: number, month: number};
     model: NgbDateStruct;
@@ -78,6 +80,7 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             backSpeed: 0,
             loop: false
             });
+            
     }
     ngOnDestroy(){
         var navbar = document.getElementsByTagName('nav')[0];

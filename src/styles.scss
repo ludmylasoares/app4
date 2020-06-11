@@ -31,10 +31,6 @@ $now-ui-kit-angular-theme: mat-light-theme($now-ui-kit-angular-primary, $now-ui-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-/* Start http://www.cursors-4u.com*/  * 
-{cursor: url(http://cur.cursors-4u.net/cursors/cur-11/cur1054.cur), auto !important;} 
-/* End http://www.cursors-4u.com */
-
     @-webkit-keyframes fadeIn {
         0% { opacity: 0; }
         100% { opacity: 1; } 
@@ -62,5 +58,14 @@ $now-ui-kit-angular-theme: mat-light-theme($now-ui-kit-angular-primary, $now-ui-
             background: #87293e;
             color: white;
           } 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%; 
+    }
+
+html, body {
+    cursor: url(http://ludmylasoares.site/cursor/alternate.cur), auto !important; 
+    }
+    
+a:link, a:visited, a:hover, a:active, button:active, button:visited, button:hover {
+    cursor: url(http://ludmylasoares.site/cursor/hand2.cur), auto !important; 
+    }
