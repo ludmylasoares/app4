@@ -1,29 +1,29 @@
 
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
+// Tema personalizado para material angular
+// Para mais informações: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';
-// Plus imports for other components in your app.
+// Além disso, importa para outros componentes no seu aplicativo.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
+// Inclua os estilos comuns para o material angular. Incluímos isso aqui para que você apenas
+// precisa carregar um único arquivo css para o material angular no seu aplicativo.
+// Certifique-se de incluir esta mistura apenas uma vez!
 @include mat-core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
+// Defina as paletas para o seu tema usando as paletas Material Design disponíveis em palette.scss
+// (importado acima). Para cada paleta, você pode opcionalmente especificar um padrão, mais claro e mais escuro
+// matiz. Paletas de cores disponíveis: https://material.io/design/color/
 $now-ui-kit-angular-primary: mat-palette($mat-indigo);
 $now-ui-kit-angular-accent: mat-palette($mat-pink, A200, A100, A400);
 
-// The warn palette is optional (defaults to red).
+// A paleta de aviso é opcional (o padrão é vermelho).
 $now-ui-kit-angular-warn: mat-palette($mat-red);
 
-// Create the theme object (a Sass map containing all of the palettes).
+// Crie o objeto do tema (um mapa Sass contendo todas as paletas).
 $now-ui-kit-angular-theme: mat-light-theme($now-ui-kit-angular-primary, $now-ui-kit-angular-accent, $now-ui-kit-angular-warn);
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+// Inclua estilos de tema para o núcleo e cada componente usado no seu aplicativo.
+// Como alternativa, você pode importar e incluir os mixins de temas para cada componente
+// que você está usando.
 @include angular-material-theme($now-ui-kit-angular-theme);
 
 // Custom.scss
@@ -68,4 +68,10 @@ html, body {
     
 a:link, a:visited, a:hover, a:active, button:active, button:visited, button:hover {
     cursor: url(http://ludmylasoares.site/cursor/hand2.cur), auto !important; 
+    }
+
+    .primary {
+        background:  #87293e;  /* fallback for old browsers*/
+        background: -webkit-linear-gradient(to bottom, #87293e, #1c2331);  /* Chrome 10-25, Safari 5.1-6*/
+        background: linear-gradient(to bottom,  #87293e, #1c2331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }

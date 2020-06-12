@@ -2,7 +2,7 @@ body {margin:0;height:2000px;}
 
 .icon-bar {
   position: fixed;
-  top: 70%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -14,16 +14,22 @@ body {margin:0;height:2000px;}
   padding: 10px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .icon-bar a:hover {
-  background: #87293e;
+  background: #3f51b5;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .facebook {
   background: #3B5998;
   color: white;
+  border-top-right-radius: 8px;
 }
 
 .github {
@@ -39,9 +45,5 @@ body {margin:0;height:2000px;}
 .whatsapp {
   background: #2ab23f;
   color: white;
-}
-
-.content {
-  margin-left: 75px;
-  font-size: 30px;
+  border-bottom-right-radius: 7px;
 }
