@@ -12,8 +12,8 @@
 // Defina as paletas para o seu tema usando as paletas Material Design disponíveis em palette.scss
 // (importado acima). Para cada paleta, você pode opcionalmente especificar um padrão, mais claro e mais escuro
 // matiz. Paletas de cores disponíveis: https://material.io/design/color/
-$now-ui-kit-angular-primary: mat-palette($mat-indigo);
-$now-ui-kit-angular-accent: mat-palette($mat-pink, A200, A100, A400);
+$now-ui-kit-angular-primary: mat-palette($mat-purple);
+$now-ui-kit-angular-accent: mat-palette($mat-pink, A200, A100, A900);
 
 // A paleta de aviso é opcional (o padrão é vermelho).
 $now-ui-kit-angular-warn: mat-palette($mat-red);
@@ -31,37 +31,6 @@ $now-ui-kit-angular-theme: mat-light-theme($now-ui-kit-angular-primary, $now-ui-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-    @-webkit-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; } 
-        }
-        @-moz-keyframes fadeIn {
-        0% { opacity: 0;}
-        100% { opacity: 1; }
-        }
-        @-o-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-        }
-        @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-        }
-    
-        .fadeIn {
-            -webkit-animation: fadeIn 3s ease-in-out;
-            -moz-animation: fadeIn 3s ease-in-out;
-            -o-animation: fadeIn 3s ease-in-out;
-            animation: fadeIn 3s ease-in-out;
-        }
-        ::selection {
-            background: #87293e;
-            color: white;
-          } 
-html, body { 
-    height: 100%; 
-    }
-
 html, body {
     cursor: url(http://ludmylasoares.site/cursor/alternate.cur), auto !important; 
     }
@@ -70,7 +39,12 @@ a:link, a:visited, a:hover, a:active, button:active, button:visited, button:hove
     cursor: url(http://ludmylasoares.site/cursor/hand2.cur), auto !important; 
     }
 
-    .primary {
+   ::selection {
+        background: #87293e;
+        color: white;
+    }    
+
+.lud {
         background:  #87293e;  /* fallback for old browsers*/
         background: -webkit-linear-gradient(to bottom, #87293e, #1c2331);  /* Chrome 10-25, Safari 5.1-6*/
         background: linear-gradient(to bottom,  #87293e, #1c2331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

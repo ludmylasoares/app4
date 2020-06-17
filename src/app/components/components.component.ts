@@ -73,13 +73,13 @@ export class ComponentsComponent implements OnInit, OnDestroy {
             loop: true
             });
 
-        var typed6 = new Typed('#typed6', {
+        /*var typed6 = new Typed('#typed6', {
             strings: ['<i>"Procuro experiências inovadoras em minha carreira e a participação em projetos que façam a diferença na vida das pessoas. Acredito que só assim podemos continuar em constante evolução!"</i>'],
             typeSpeed: 30,
             cursorChar: '_',  
             backSpeed: 0,
             loop: false
-            });
+            });*/
             
     }
     ngOnDestroy(){

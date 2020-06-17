@@ -1,7 +1,7 @@
 mat-fab-menu.fix-bottom-right {
     position: fixed;
-    bottom: 15px;
-    right: 15px;
+    bottom: 35px;
+    right: 10px;
     z-index: 100;
   }
 
@@ -15,9 +15,3 @@ mat-fab-menu.fix-bottom-left {
 mat-fab-menu {
       margin-bottom: 10px;
   }
-
-  .button {
-    color:#1c2331; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-}  
-
