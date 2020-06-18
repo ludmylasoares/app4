@@ -14,16 +14,14 @@ body {margin:0;height:2000px;}
   padding: 10px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .icon-bar a:hover {
   background:  #c66f64;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+ -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .facebook {
@@ -43,12 +41,12 @@ body {margin:0;height:2000px;}
 }
 
 .google {
-  background: #f82929;
+  background: #ee3d3d;
   color: white;
 }
 
 .whatsapp {
   background: #2ab23f;
   color: white;
-  border-bottom-right-radius: 7px;
+  border-bottom-right-radius: 8px;
 }

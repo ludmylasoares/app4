@@ -26,12 +26,14 @@
               }
             ],
             "styles": [
+              "node_modules/animate.css/animate.min.css",
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
               "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/rellax/rellax.min.js"
+              "node_modules/rellax/rellax.min.js",
+              "src/assets/js/cse.js"
             ]
           },
           "configurations": {
@@ -79,13 +81,14 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "src/assets/js/player.js",
-              "node_modules/rellax/rellax.min.js"
+              "node_modules/rellax/rellax.min.js",
+              "src/assets/js/cse.js"
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
-              "src/assets/css/demo.css"
+              "src/assets/css/demo.css",
+              "node_modules/animate.css/animate.compat.css"
             ],
             "assets": [
               "src/assets",

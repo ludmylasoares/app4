@@ -1,7 +1,8 @@
 mat-fab-menu.fix-bottom-right {
     position: fixed;
+    
     bottom: 35px;
-    right: 10px;
+    right: 5px;
     z-index: 100;
   }
 
@@ -13,5 +14,5 @@ mat-fab-menu.fix-bottom-left {
   } 
 
 mat-fab-menu {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
   }

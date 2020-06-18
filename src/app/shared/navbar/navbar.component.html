@@ -1,3 +1,5 @@
+<!--0. Início Fade In-->
+<div class="fadeIn">
 <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
       <div class="dropdown button-dropdown">
@@ -26,9 +28,10 @@
          </div>
       </div>
       <div class="navbar-translate">
-            <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Olá, seja bem-vindo(a)!"> 
-              <img class="efeito" src="assets/img/marca.png" style="width:40px;height:40px;"> 
-              Ludmyla Soares</a>
+            <a class="navbar-brand" [routerLink]="['/index']" placement="bottom" ngbTooltip="Olá, seja bem-vindo(a)!">
+              <img class="animate__flash" src="assets/img/marca.png" style="width:30px;height:30px;">
+              Ludmyla Soares
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar bar1"></span>
                 <span class="navbar-toggler-bar bar2"></span>
@@ -70,17 +73,18 @@
                <li class="nav-item">
                   <a class="nav-link" href="https://www.ludmylasoares.site/pdf/curriculo_ludmyla_oliveira_soares.pdf" target="_blank">
                       <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-                      <p>Imprimir</p>
+                      <p class="d-lg-none d-xl-none">Imprimir</p>
                   </a>
               </li>  
               <li class="nav-item">
                 <a class="nav-link" [routerLink]="['/examples/login']">
                     <i class="now-ui-icons gestures_tap-01"></i>
-                    <p>Login</p>
+                    <p class="d-lg-none d-xl-none">Login</p>
                 </a>
             </li>   
             </ul>
         </div>
     </div>
 </nav>
+</div>
 
