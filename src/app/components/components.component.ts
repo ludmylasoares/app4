@@ -1,5 +1,4 @@
 import { Component, OnInit, Renderer2, OnDestroy} from '@angular/core';
-import { faDoorOpen, faDoorClosed, faDungeon } from '@fortawesome/free-solid-svg-icons';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { NgbAccordionConfig } from '@ng-bootstrap/ng-bootstrap';
 import * as Rellax from 'rellax';
@@ -15,10 +14,6 @@ declare var particlesJS: any;
 })
 
 export class ComponentsComponent implements OnInit, OnDestroy {
-
-    DoorOpenIcon = faDoorOpen;
-    DoorClosedIcon = faDoorClosed;
-    DungeonIcon = faDungeon;
     
     data : Date = new Date();
 

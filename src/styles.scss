@@ -30,12 +30,11 @@ $now-ui-kit-angular-theme: mat-light-theme($now-ui-kit-angular-primary, $now-ui-
 // Opção A: Importa todo o Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import '~animate.css/animate.min.css';
 
-html, body {
+body {
     cursor: url(http://ludmylasoares.site/cursor/alternate.cur), auto !important; 
     }
-    
+
 a:link, a:visited, a:hover, a:active, button:active, button:visited, button:hover {
     cursor: url(http://ludmylasoares.site/cursor/hand2.cur), auto !important; 
     }
@@ -74,5 +73,37 @@ a:link, a:visited, a:hover, a:active, button:active, button:visited, button:hove
             -moz-animation: fadeIn 3s ease-in-out;
             -o-animation: fadeIn 3s ease-in-out;
             animation: fadeIn 3s ease-in-out;
+           
         }
-       
+       /* .centralizar {
+                width: 15vw;
+                height: 50vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center
+            }
+            .centro{
+                width:330px;
+                height:33px;
+                top:-2px;
+                right:-2px;
+                outline:none;
+                border:none;
+                background:transparent;
+                color:#FFF;
+                position:relative;	
+                font-size:16px;
+             }
+             .btnlud {
+                width:33px;
+                height:35px;
+                outline:none;
+                border:none;
+                background:#FF7F00;
+                cursor:pointer;
+                top:2px;
+                left:-4px;
+                position:relative;
+            }*/
+      

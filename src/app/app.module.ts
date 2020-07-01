@@ -14,10 +14,11 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MusicComponent } from './shared/music/music.component';
 import { FabComponent } from './shared/fab/fab.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatFabMenuModule } from '@angular-material-extensions/fab-menu';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { Fab2Component } from './shared/fab2/fab2.component';
+import { GalleryModule } from  '@ngx-gallery/core';
+import { GallerizeModule } from  '@ngx-gallery/gallerize';
 
 @NgModule({
     declarations: [
@@ -33,13 +34,14 @@ import { Fab2Component } from './shared/fab2/fab2.component';
         BrowserAnimationsModule,
         HttpClientModule,
         NgbModule,
+        GalleryModule,
+        GallerizeModule,
         FormsModule,
         RouterModule,
         AppRoutingModule,
         ComponentsModule,
         ExamplesModule,
         FlexLayoutModule,
-        FontAwesomeModule,
         MatFabMenuModule,
         MatSlideToggleModule
     ],

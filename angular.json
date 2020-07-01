@@ -24,16 +24,15 @@
                 "input": "node_modules/svg-country-flags/svg",
                 "output": "assets/svg-country-flags/svg"
               }
-            ],
+            ], 
             "styles": [
-              "node_modules/animate.css/animate.min.css",
               "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/assets/sass/now-ui-kit.scss",
               "src/assets/css/demo.css"
             ],
             "scripts": [
-              "node_modules/rellax/rellax.min.js",
-              "src/assets/js/cse.js"
+             "node_modules/rellax/rellax.min.js"
             ]
           },
           "configurations": {
@@ -81,14 +80,12 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "node_modules/rellax/rellax.min.js",
-              "src/assets/js/cse.js"
+              "node_modules/rellax/rellax.min.js"
             ],
             "styles": [
               "src/styles.scss",
               "src/assets/sass/now-ui-kit.scss",
-              "src/assets/css/demo.css",
-              "node_modules/animate.css/animate.compat.css"
+              "src/assets/css/demo.css"         
             ],
             "assets": [
               "src/assets",

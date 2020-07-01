@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faCog, faCode, faTablet, faSitemap, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { faAngular,faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -9,15 +7,6 @@ import { faAngular,faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./fab.component.css']
 })
 export class FabComponent implements OnInit {
-
-  CogIcon = faCog;
-  AngularIcon = faAngular;
-  CodeIcon = faCode;
-  Css3Icon = faCss3;
-  Html5Icon = faHtml5;
-  TabletIcon = faTablet;
-  SitemapIcon = faSitemap;
-  TimesIcon = faTimes
  
   constructor() { }
 

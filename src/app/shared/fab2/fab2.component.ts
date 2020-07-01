@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatFabMenu, MatFabMenuDirection } from '@angular-material-extensions/fab-menu';
 import { ThemePalette } from '@angular/material/core';
-import { faCog, faCode, faTablet, faSitemap, faTimes, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-import { faAngular,faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-fab2',
@@ -11,16 +9,6 @@ import { faAngular,faCss3, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 })
 export class Fab2Component implements OnInit {
 
-  TimesIcon = faTimes;
-  BoxOpenIcon = faBoxOpen;
-  CogIcon = faCog;
-  AngularIcon = faAngular;
-  CodeIcon = faCode;
-  Css3Icon = faCss3;
-  Html5Icon = faHtml5;
-  TabletIcon = faTablet;
-  SitemapIcon = faSitemap;
-  
   title = 'fab-menu';
   direction: MatFabMenuDirection = 'top';
   color: ThemePalette = 'primary';

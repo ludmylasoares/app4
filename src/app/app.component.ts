@@ -6,7 +6,6 @@ import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
-
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -40,11 +39,8 @@ export class AppComponent implements OnInit {
                     // remove logic
                     navbar.classList.add('navbar-transparent');
                 }
-            });
-            
+            }); 
         });
-        
     }
-    
 }
 
