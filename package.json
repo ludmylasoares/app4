@@ -33,7 +33,7 @@
     "@ngx-gallery/core": "^5.0.0-beta.0",
     "@ngx-gallery/gallerize": "^5.0.0-beta.0",
     "@ngx-gallery/lightbox": "^5.0.0-beta.0",
-    "ajv": "6.12.2",
+    "ajv": "6.12.3",
     "ajv-keywords": "3.4.1",
     "bootstrap": "4.5.0",
     "copy-webpack-plugin": "6.0.1",
